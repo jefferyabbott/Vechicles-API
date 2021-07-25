@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS PRICE (vehicleId INT PRIMARY KEY auto_increment, currency VARCHAR(3), price DECIMAL(10,2));
+CREATE TABLE IF NOT EXISTS price (vehicleId INT PRIMARY KEY NOT NULL, currency VARCHAR(10), price DECIMAL(20,2));
 
 INSERT INTO price (vehicleId, currency, price) VALUES (1, 'USD', 21952.73);
 INSERT INTO price (vehicleId, currency, price) VALUES (2, 'USD', 32918.15);
@@ -20,4 +20,3 @@ INSERT INTO price (vehicleId, currency, price) VALUES (17, 'USD', 24500.75);
 INSERT INTO price (vehicleId, currency, price) VALUES (18, 'USD', 30000.00);
 INSERT INTO price (vehicleId, currency, price) VALUES (19, 'USD', 32750.00);
 INSERT INTO price (vehicleId, currency, price) VALUES (20, 'USD', 29950.85);
-
